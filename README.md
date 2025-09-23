@@ -15,3 +15,5 @@ A: Enter the server IP in the settings!<br>
 Q: What if it doesn't connect properly?<br>
 A: You can let us know using the Issues feature, or use our<br>
 Featured local listings.
+
+## Getting started:
