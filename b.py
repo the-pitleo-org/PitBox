@@ -53,6 +53,7 @@ def getmodules():
     path_audio = "AUD"
     if os.path.isdir(path_tv):
         print(f"'{path_tv}' is a directory.")
+        print("added tv")
         module_list.append("TV")
     else:
         print(f"'{path_tv}' was not found")

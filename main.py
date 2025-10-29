@@ -1,6 +1,7 @@
 import os
 import time
 import b
+import platform
 
 
 vorder = "+ - - - - - - - - - - - - - - - - - - - - +"
@@ -22,9 +23,11 @@ print(f"Installed Modules: {b.module_list}")
 
 b.getsysinfo()
 
+if platform == 'win':
+    b.title()
+
 time.sleep(1)
 
-b.title()
 
 import qlod
 

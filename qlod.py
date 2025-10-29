@@ -12,6 +12,6 @@ if len(b.module_list) > 1:
     
 else:
     print("List contains one value.")
-
-if "TV" in b.module_list:
+    if "TV" in b.module_list:
         subprocess.run(["python3", "TV/init.py"]) 
+
