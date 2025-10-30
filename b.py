@@ -4,6 +4,7 @@ import os
 import sys
 
 module_list = []
+garbage_info = True
 
 speed = 0.1
 
@@ -49,8 +50,9 @@ def cls():
         os.system('clear')
 
 def getmodules():
-    path_tv = "TV"
+    path_tv = "PitBox/qTV"
     path_audio = "AUD"
+    print("getmodules init")
     if os.path.isdir(path_tv):
         print(f"'{path_tv}' is a directory.")
         print("added tv")
@@ -64,3 +66,13 @@ def getmodules():
     else:
         print(f"'{path_audio}' is not a directory.")
         pass
+
+def garbageinfochanger():
+    print("DISABLE Garbage information on startup?")
+    stln = input("1 (YES), 2 (NO)")
+    if stln == "1":
+        print("Disabling")
+        garbage_info = False
+    else:
+        print("Enabling")
+        garbage_info = True

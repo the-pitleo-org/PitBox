@@ -5,7 +5,7 @@ import platform
 
 
 vorder = "+ - - - - - - - - - - - - - - - - - - - - +"
-junk = True
+
 
 
 
@@ -21,10 +21,12 @@ print(vorder)
 print("PitBox by Pitleo")
 print(f"Installed Modules: {b.module_list}")
 
-b.getsysinfo()
+if b.garbage_info == True:
+    b.getsysinfo()
+    print("Disable garbage info by typing 'dsbG' in the terminal.")
 
-if platform == 'win':
-    b.title()
+
+b.title()
 
 time.sleep(1)
 
